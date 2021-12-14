@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+{% extends 'base.html' %}
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}BootstrapGod Images{% endblock %}</title>
 </head>
 <body>
-
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, Boostrap Users</h1>
+        <p class="lead">Welcome to my Web-Based IT Final, this site will consist of a Homepage which you're on now, an about page, and an image gallery</p>
+        <hr class="my-4">
+        <p>This site uses Boostrap, Boostrap is a Front-end Framework and  a technique of loading a program into a computer by means of a few initial instructions which enable the introduction of the rest of the program from an input device.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+        </p>
+    </div>
+{% endblock content %}
 </body>
 </html>

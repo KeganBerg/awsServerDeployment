@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Image Gallery{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Image Gallery Home</h1>
+        <p class="lead">Welcome to the Image Gallery, there are three genres to choose from the dropdown link above, below are some of my personal favorite images.</p>
+    </div>
+</div>
+<br>
+<div>
+    <div style="text-align: center;"><p class="h1">Hubble Deep Field</p></div>
+    <br>
+    <div class="text-center">
+        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-01evvfya7x23asyxfwh5ejgmt9.jpg" class="rounded" width="50%" alt="https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-01evvfya7x23asyxfwh5ejgmt9.jpg">
+        <div style="text-align: center;"><p><i>https://www.nasa.gov/content/discoveries-hubbles-deep-fields</i></p></div>
+    </div>
+</div>
+<div>
+    <br>
+    <div style="text-align: center;"><p class="h1">Rockie Mountains</p></div>
+    <div class="text-center">
+        <br>
+        <img src="https://wildlandtrekking.com/content/uploads/2020/09/ROCKY-MOUNTAINS.jpg" class="rounded" width="50%" alt="https://wildlandtrekking.com/content/uploads/2020/09/ROCKY-MOUNTAINS.jpg">
+        <div style="text-align: center;"><p><i>https://wildlandtrekking.com/blog/your-first-trip-hiking-the-rocky-mountains/</i></p></div>
+    </div>
+</div>
+<div>
+    <br>
+    <div style="text-align: center;"><p class="h1">Wheatfield with Crows</p></div>
+    <div class="text-center">
+        <br>
+        <img src="https://i.guim.co.uk/img/media/e91f4ca0f54d3eab629ae1f04c86f80ff0df405f/218_0_3292_1976/master/3292.jpg?width=1200&quality=85&auto=format&fit=max&s=e432506b2882076a8b3f56a09d86cca7" class="rounded" width="50%" alt="https://i.guim.co.uk/img/media/e91f4ca0f54d3eab629ae1f04c86f80ff0df405f/218_0_3292_1976/master/3292.jpg?width=1200&quality=85&auto=format&fit=max&s=e432506b2882076a8b3f56a09d86cca7">
+        <div style="text-align: center;"><p><i>https://www.theguardian.com/artanddesign/2020/jul/28/location-van-gogh-final-painting-tree-roots-postcard</i></p></div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

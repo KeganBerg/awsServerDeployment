@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+{% extends 'base.html' %}
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}About Page{% endblock %}</title>
 </head>
 <body>
-
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">About The Gallery</h1>
+    <p class="lead">This Galley is a collection of images that I found either beautiful or peculiar, there's something about the beauty of our world and other worlds alike </p>
+    <hr class="my-4">
+    <p>These images are not mine, and I will credit all the photographers below each image</p>
+{% endblock content %}
+</div>
 </body>
 </html>
