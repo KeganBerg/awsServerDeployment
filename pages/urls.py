@@ -7,5 +7,5 @@ urlpatterns = [
     path('space.html', SpaceView.as_view(), name='space'),
     path('imagegallery.html', ImageGalleryView.as_view(), name='imagegallery'),
     path('about.html', AboutPageView.as_view(), name='about'),
-    path('home.html', HomePageView.as_view(), name='home'),
+    path('', HomePageView.as_view(), name='home'),
 ]

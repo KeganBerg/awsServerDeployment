@@ -38,7 +38,18 @@
             </li>
         </ul>
     </div>
+    <div class="nav-right">
+        <a href="{% url 'signup' %}">Signup</a><br>
+        <a href="{% url 'login' %}">Login</a><br>
+        <a href="{% url 'logout' %}">Signout</a>
+
+    </div>
 </nav>
+{% if user.is_authenticated %}
+    <p><div style="text-align: center;">Hi {{ user.username }}!</div>
+{% else %}
+    <p><div style="text-align: center;">You are not logged in.</div>
+{% endif %}
 {% block content %}
 {% endblock content %}
 <footer class="text-center text-lg-start bg-light text-muted">
